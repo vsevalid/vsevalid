@@ -128,18 +128,21 @@ def fetch_loc(token: str, repo_names: list[str], cache: dict) -> tuple[int, int,
             continue
 
         owner, name = repo.split("/", 1)
+        url = f"{GH_REST}/repos/{owner}/{name}/stats/contributors"
         data = None
-        for _ in range(5):
-            try:
-                data = rest(token, f"/repos/{owner}/{name}/stats/contributors")
-            except requests.HTTPError as e:
-                if e.response.status_code == 404:
-                    break
+        for _ in range(6):
+            r = requests.get(url, headers=_headers(token), timeout=30)
+            if r.status_code == 404:
+                break
+            # 202 = GitHub is still computing stats (empty body); retry after a pause
+            if r.status_code == 202 or not r.text.strip():
+                time.sleep(4)
+                continue
+            if r.status_code != 200:
                 time.sleep(2)
                 continue
-            if isinstance(data, list):
-                break
-            time.sleep(3)  # 202 = GitHub still computing stats, retry
+            data = r.json()
+            break
 
         if not isinstance(data, list):
             continue
