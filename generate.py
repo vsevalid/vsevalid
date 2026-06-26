@@ -9,7 +9,6 @@ import time
 import hashlib
 from pathlib import Path
 from datetime import datetime, timezone
-from typing import Any
 
 import requests
 
@@ -40,17 +39,6 @@ def gql(token: str, query: str, variables: dict | None = None) -> dict:
     if "errors" in body:
         raise RuntimeError(body["errors"])
     return body["data"]
-
-
-def rest(token: str, path: str, **params: Any) -> Any:
-    r = requests.get(
-        f"{GH_REST}{path}",
-        headers=_headers(token),
-        params=params or None,
-        timeout=30,
-    )
-    r.raise_for_status()
-    return r.json()
 
 
 # ── graphql queries ───────────────────────────────────────────────────────────
