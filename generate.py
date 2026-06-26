@@ -147,7 +147,8 @@ def fetch_loc(token: str, repo_names: list[str], cache: dict) -> tuple[int, int,
         add = del_ = 0
         login_lower = USERNAME.lower()
         for contributor in data:
-            if contributor.get("author", {}).get("login", "").lower() == login_lower:
+            author = contributor.get("author") or {}
+            if author.get("login", "").lower() == login_lower:
                 for week in contributor.get("weeks", []):
                     add += week.get("a", 0)
                     del_ += week.get("d", 0)
