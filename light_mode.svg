@@ -1,0 +1,86 @@
+<svg width="940" height="432" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <rect width="940" height="432" rx="9" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="939" height="431" rx="8.5" fill="none" stroke="#d1d9e0"/>
+
+  <!-- left panel -->
+  <path d="M0 9 a9 9 0 0 1 9 -9 h311 v432 h-311 a9 9 0 0 1 -9 -9 Z" fill="#f6f8fa"/>
+  <line x1="320" y1="30" x2="320" y2="432" stroke="#d1d9e0"/>
+
+  <!-- title bar -->
+  <path d="M0 9 a9 9 0 0 1 9 -9 h922 a9 9 0 0 1 9 9 v21 h-940 Z" fill="#f6f8fa"/>
+  <line x1="0" y1="30" x2="940" y2="30" stroke="#d1d9e0"/>
+  <circle cx="17" cy="15" r="5" fill="#ff5f57"/>
+  <circle cx="34" cy="15" r="5" fill="#ffbd2e"/>
+  <circle cx="51" cy="15" r="5" fill="#28c840"/>
+  <text x="470" y="19" font-size="11.5" fill="#636c76"
+        text-anchor="middle">Vsevolod — profile</text>
+
+  <!-- portrait -->
+  <clipPath id="pclip"><rect x="0" y="30" width="319" height="402"/></clipPath>
+  <g clip-path="url(#pclip)" fill="#1f9a61" font-size="7.91" opacity="0.92">
+    <text x="1.0" y="37.81" xml:space="preserve">                             .-- =+-. .</text>
+    <text x="1.0" y="47.30" xml:space="preserve">                           :--*#*:.--= =...-</text>
+    <text x="1.0" y="56.79" xml:space="preserve">                        .==..  =.:..-     +=-.</text>
+    <text x="1.0" y="66.28" xml:space="preserve">                       +-.-. .        -  -=-#--.</text>
+    <text x="1.0" y="75.78" xml:space="preserve">                     .==# =               .+@@=:-</text>
+    <text x="1.0" y="85.27" xml:space="preserve">                  +*%-.+.=    *%@@@@*==-  ==+%**..-.</text>
+    <text x="1.0" y="94.76" xml:space="preserve">                 .#%: : .+ .#@@@@@@@@@@@+ . .##@#=-=-.</text>
+    <text x="1.0" y="104.25" xml:space="preserve">                .*++:-. -. %@@@@@@@@@@@@@# . .+*+%=*#+</text>
+    <text x="1.0" y="113.75" xml:space="preserve">                -.+ . -. .######%@@@@@@@@#+= -..- *=%-</text>
+    <text x="1.0" y="123.24" xml:space="preserve">                .+...    + :   - +@@@=      ....-. #+*</text>
+    <text x="1.0" y="132.73" xml:space="preserve">                % --.   =%#=   -=%@@@=.---===  : ..+**</text>
+    <text x="1.0" y="142.22" xml:space="preserve">               .+-+--.  #@@@@#++%@@@@@#--#*+@     -- =.</text>
+    <text x="1.0" y="151.72" xml:space="preserve">               =+*=-.   #@@@@@@@@@@@@@@@@@@@@       +-:</text>
+    <text x="1.0" y="161.21" xml:space="preserve">              .+%=-.  . #@@@@@@@+=++=*@@@@@@@   .-:+%*=.</text>
+    <text x="1.0" y="170.70" xml:space="preserve">              -@+= .. .-+@@%@@@@#.-= .@@@@@@#.  . -.+#+-+</text>
+    <text x="1.0" y="180.19" xml:space="preserve">              -%==-..   .@@@@=#%@+===+*+@@@@-    - ..-++.</text>
+    <text x="1.0" y="189.69" xml:space="preserve">              ..#--. .   *@@@@@@@@@@@@##%@@#   . .  +.</text>
+    <text x="1.0" y="199.18" xml:space="preserve">               ++=--: .  =%@@@@@@@%%@@@@@@*      .-=--</text>
+    <text x="1.0" y="208.67" xml:space="preserve">             .--#=- .  = .@%%@@@@@@@@@@@@#     :.---+.</text>
+    <text x="1.0" y="218.16" xml:space="preserve">             :++#- -#- - .-@@##*=.===*-#@=    .:.= ==-</text>
+    <text x="1.0" y="227.66" xml:space="preserve">      .-++*+#+:=.. -=. : -.=@@@%+++++#@@* .... -:---=</text>
+    <text x="1.0" y="237.15" xml:space="preserve">    -%%@@@@@@@#*-. *+@. .  :=@@@@@@@@@@+  -- - .- -+-</text>
+    <text x="1.0" y="246.64" xml:space="preserve"> .+@%@@@@@@%@@@@@#**@@+.  .:  #@@@@@@@+  +   -%-#+*%#*</text>
+    <text x="1.0" y="256.13" xml:space="preserve"> ++@@@@@@@@@%@@@@=*@%@+= = -- %%#%#*+**=+*   -#%##@#@@%*.</text>
+    <text x="1.0" y="265.63" xml:space="preserve">-@%##@@@@@@#*@@@@##@@@@+..*:= . .=-    .++ =-==:=@@@#@@@@+.</text>
+    <text x="1.0" y="275.12" xml:space="preserve">%@@%*@*@@@@@+%@%@#@#@#..*- +@@-  -.    =. -=*=@-.#**#*@@*@@=</text>
+    <text x="1.0" y="284.61" xml:space="preserve">@@@@@@%*@@@@#%@@*+==. . ===.@%***=.  -++ =@#+++--##@@#@%#@+@=</text>
+    <text x="1.0" y="294.10" xml:space="preserve">@@@@@@@*@%@+%+@%%+*=++*++ +-+#:=%%...%@=.#*++ #@*%#@@@@##%#%#=</text>
+    <text x="1.0" y="303.60" xml:space="preserve">@@@@@@@%*%@=++@@@@@@%@@@=+@#+---@*  %%# -++***=@@@%@@@@%**@*%%</text>
+    <text x="1.0" y="313.09" xml:space="preserve">@%@@@@@@%+=..+@@@@@@@@@@=*#@@+ -+#  @@==*@@@%*+@@@@@@@@@=*=#@*</text>
+    <text x="1.0" y="322.58" xml:space="preserve">@@@@@@@@@*.% +@@@@@@@@%@@+#%@=-=#+ .+.==%@@@*%.@@@@@@@@@#**@##=</text>
+    <text x="1.0" y="332.07" xml:space="preserve">@@@@@@+=@@-+ *@@@@@@@@@@@@@@%=.=%=.-..-%@@@@@%+#@@@@@@@#*+@+%%=</text>
+    <text x="1.0" y="341.57" xml:space="preserve">@@@@@@@@+%#= *+=%*%%%@@@@#%+%=+=#= * -.%%%+@#*+%@@%@@@=#+++@@@%</text>
+    <text x="1.0" y="351.06" xml:space="preserve">@@@@@@@@@*+..@@%=# -++#%%*-+* .%.-.=.. +%**#*#=%%  %=-#%*-@@@%@=</text>
+    <text x="1.0" y="360.55" xml:space="preserve">#+%@@@@@%@%..=+@@@%##:##*+:==. =:.- :+=:+-%-*%+-%#%@%@@@%+@@@@@%</text>
+    <text x="1.0" y="370.04" xml:space="preserve">@@@@@@@%@*%#..=%##@@+-@@@@@#.=+=----#=. -@@@#@#.@#@%@%+#@##@%@@@-</text>
+    <text x="1.0" y="379.54" xml:space="preserve">@@@@@@@@@*===#+++=.=.+@@@@@# .*..-++.  .:@@@@@#:-=====:=*+%@%@@@*</text>
+    <text x="1.0" y="389.03" xml:space="preserve">@@@@@@@@@@.  +#%#*#@-@%#@@@+  **=@.. .--:#@@@@#%=@@*%#**#@%@@@@#@=</text>
+    <text x="1.0" y="398.52" xml:space="preserve">@@@@@@%@%% .-#@%+*@##%@@@@@+- +#*%....+  +@@@@@%*+@#@@@*#@@##*#@+*</text>
+    <text x="1.0" y="408.01" xml:space="preserve">#@@@@@@@@* .=@@@-%#%%@.*@%@=.-%#% . -+# .-#@@@@@*=%%@@#=@@@@@***%@.</text>
+    <text x="1.0" y="417.51" xml:space="preserve">#%#@@@%*@@%--@@@+@@%%%%@@@#-.+=-..--#%*-: *@@@@@@#@@@@@ -.=*@@@@@#</text>
+    <text x="1.0" y="427.00" xml:space="preserve">@@@@@@##%@*-++@*##@@%@@--+%:::#:--:-%=::::-%@@@@*%@@@@#=-=%#-+@@%%</text>
+  </g>
+
+  <!-- info -->
+  <circle cx="798" cy="57.0" r="4" fill="#1a7f37"/><text x="810" y="61.0" font-size="11" font-weight="normal" text-anchor="start"><tspan fill="#1a7f37">open to work</tspan></text>
+  <text x="346" y="64.0" font-size="21" font-weight="normal" text-anchor="start"><tspan fill="#1f2328" font-weight="700">Vsevolod</tspan><tspan fill="#636c76" font-size="14"> @vsevalid</tspan></text>
+  <text x="346" y="85.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#636c76">// </tspan><tspan fill="#0969da">Software Engineer</tspan><tspan fill="#636c76"> · 6+ yrs commercial · MVP → Production</tspan></text>
+  <line x1="346" y1="99.0" x2="916" y2="99.0" stroke="#d1d9e0" stroke-width="1"/>
+  <text x="346" y="120.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">OS</tspan></text><text x="442" y="120.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328">macOS · Windows</tspan></text>
+  <text x="346" y="137.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">IDE</tspan></text><text x="442" y="137.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328">VSCode · PyCharm</tspan></text>
+  <text x="346" y="154.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">Spoken</tspan></text><text x="442" y="154.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328">Russian · English · Ukrainian</tspan></text>
+  <text x="346" y="177.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#0969da">▸ </tspan><tspan fill="#0969da" font-weight="600">Stack</tspan></text>
+  <text x="346" y="195.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  Backend</tspan></text><text x="442" y="195.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328">Python · FastAPI · asyncio · SQLAlchemy · PostgreSQL · Redis</tspan></text>
+  <text x="346" y="211.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  Frontend</tspan></text><text x="442" y="211.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328">React · TypeScript · Vite · Leaflet</tspan></text>
+  <text x="346" y="228.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  DevOps</tspan></text><text x="442" y="228.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328">Docker · Linux · Nginx · GitHub Actions</tspan></text>
+  <text x="346" y="244.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  Automation</tspan></text><text x="442" y="244.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328">Chrome Ext MV3 · Playwright · FFmpeg · Celery</tspan></text>
+  <text x="346" y="261.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  Integrate</tspan></text><text x="442" y="261.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328">REST · WebSocket · Payment / Crypto APIs</tspan></text>
+  <text x="346" y="285.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#0969da">▸ </tspan><tspan fill="#0969da" font-weight="600">GitHub</tspan></text>
+  <text x="346" y="303.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  Repos</tspan></text><text x="438" y="303.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328" font-weight="600">42</tspan></text><text x="636" y="303.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">Stars</tspan></text><text x="728" y="303.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328" font-weight="600">128</tspan></text>
+  <text x="346" y="320.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  Commits</tspan></text><text x="438" y="320.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328" font-weight="600">2,341</tspan></text><text x="636" y="320.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">Followers</tspan></text><text x="728" y="320.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328" font-weight="600">94</tspan></text>
+  <text x="346" y="337.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  Contributed</tspan></text><text x="438" y="337.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328" font-weight="600">17 repos</tspan></text>
+  <text x="346" y="354.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#59636e">  LOC</tspan></text><text x="438" y="354.5" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#1f2328" font-weight="600">183,200</tspan><tspan fill="#636c76">  (</tspan><tspan fill="#1a7f37">+217,400</tspan><tspan fill="#636c76">  </tspan><tspan fill="#cf222e">-34,200</tspan><tspan fill="#636c76">)</tspan></text>
+  <line x1="346" y1="390.0" x2="916" y2="390.0" stroke="#d1d9e0" stroke-width="1"/>
+  <text x="346" y="409.0" font-size="11.5" font-weight="normal" text-anchor="start"><tspan fill="#0969da">vsevalid.dev</tspan><tspan fill="#d1d9e0">   ·   </tspan><tspan fill="#0969da">@vsevalid</tspan><tspan fill="#d1d9e0">   ·   </tspan><tspan fill="#0969da">hi@vsevalid.dev</tspan></text><text x="916" y="409.0" font-size="9.5" font-weight="normal" text-anchor="end"><tspan fill="#636c76">updated 2026-06-26</tspan></text>
+</svg>

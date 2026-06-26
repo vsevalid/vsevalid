@@ -1,0 +1,5 @@
+.claude/
+__pycache__/
+*.pyc
+Andrew6rant/
+.DS_Store
