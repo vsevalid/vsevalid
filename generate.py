@@ -227,12 +227,13 @@ def _fmt(n: int) -> str:
 
 
 def make_svg(stats: dict, ascii_lines: list[str], c: dict[str, str]) -> str:
-    # ── portrait: fill panel width (aspect-locked), anchored to bottom ──
+    # ── portrait: fill RIGHT panel width (aspect-locked), anchored to bottom ──
+    SPLIT = W - PANEL_L                       # x where portrait panel starts
     maxlen = max((len(l) for l in ascii_lines), default=1)
     fs = (PANEL_L - 2) / (maxlen * CHAR_W)   # scale so widest row spans the panel
     lh_a = fs * 1.2
     art_w = maxlen * fs * CHAR_W
-    ax = (PANEL_L - art_w) / 2               # ≈0, edge to edge
+    ax = SPLIT + (PANEL_L - art_w) / 2       # centered in right panel ≈ SPLIT
     last_baseline = H - 5
     ay0 = last_baseline - (len(ascii_lines) - 1) * lh_a
 
@@ -244,10 +245,10 @@ def make_svg(stats: dict, ascii_lines: list[str], c: dict[str, str]) -> str:
         )
     portrait = "\n    ".join(art_rows)
 
-    # ── info panel ──
-    ix = PANEL_L + 26          # left edge of info text
+    # ── info panel (now LEFT) ──
+    ix = 26                    # left edge of info text
     vx = ix + 96               # value column (after gutter label)
-    rx = W - 24                # right edge
+    rx = SPLIT - 20            # right edge of info panel
     rows: list[str] = []
     y = TITLE_H + 34.0
 
@@ -333,7 +334,7 @@ def make_svg(stats: dict, ascii_lines: list[str], c: dict[str, str]) -> str:
     loc_add   = _fmt(stats["loc_add"])
     loc_del   = _fmt(stats["loc_del"])
 
-    col2 = ix + 290
+    col2 = ix + 310
 
     def stat(label: str, value: str, xx: float, yy: float) -> str:
         return (
@@ -381,9 +382,10 @@ def make_svg(stats: dict, ascii_lines: list[str], c: dict[str, str]) -> str:
   <rect width="{W}" height="{H}" rx="9" fill="{c["bg"]}"/>
   <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="8.5" fill="none" stroke="{c["border"]}"/>
 
-  <!-- left panel -->
-  <path d="M0 9 a9 9 0 0 1 9 -9 h{PANEL_L-9} v{H} h{-(PANEL_L-9)} a9 9 0 0 1 -9 -9 Z" fill="{c["bg2"]}"/>
-  <line x1="{PANEL_L}" y1="{TITLE_H}" x2="{PANEL_L}" y2="{H}" stroke="{c["sep"]}"/>
+  <!-- right panel (portrait) -->
+  <path d="M{SPLIT+9} 0 h{PANEL_L-18} a9 9 0 0 1 9 9 v{H-18} a9 9 0 0 1 -9 9 h{-(PANEL_L-18)} a9 9 0 0 1 -9 -9 V9 a9 9 0 0 1 9 -9 Z" fill="{c["bg2"]}"/>
+  <rect x="{SPLIT}" y="0" width="9" height="{H}" fill="{c["bg2"]}"/>
+  <line x1="{SPLIT}" y1="{TITLE_H}" x2="{SPLIT}" y2="{H}" stroke="{c["sep"]}"/>
 
   <!-- title bar -->
   <path d="M0 9 a9 9 0 0 1 9 -9 h{W-18} a9 9 0 0 1 9 9 v{TITLE_H-9} h{-W} Z" fill="{c["titlebar"]}"/>
@@ -394,8 +396,8 @@ def make_svg(stats: dict, ascii_lines: list[str], c: dict[str, str]) -> str:
   <text x="{W/2:.0f}" y="{TITLE_H/2+4:.0f}" font-size="11.5" fill="{c["dim"]}"
         text-anchor="middle">{_x(NAME)} — profile</text>
 
-  <!-- portrait -->
-  <clipPath id="pclip"><rect x="0" y="{TITLE_H}" width="{PANEL_L-1}" height="{H-TITLE_H}"/></clipPath>
+  <!-- portrait (right panel) -->
+  <clipPath id="pclip"><rect x="{SPLIT+1}" y="{TITLE_H}" width="{PANEL_L-1}" height="{H-TITLE_H}"/></clipPath>
   <g clip-path="url(#pclip)" fill="{c["portrait"]}" font-size="{fs:.2f}" opacity="0.92">
     {portrait}
   </g>
